@@ -1,0 +1,542 @@
+/* --- Importar fuente --- */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* --- Estilos generales --- */
+body{
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Estilos para la primera sección (sección de inicio) --- */
+section#homesection{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);    
+    background-size: cover;
+    height: 95vh;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section#homesection header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+section#homesection header p.title{
+    margin-left: 5%;
+    font-size: 50px;
+}
+
+section#homesection header nav{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+    width: 70%;
+}
+
+section#homesection header nav a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+section#homesection header nav a:hover{
+    transform: scale(1.05);
+    color: rgb(228, 228, 228);
+}
+
+section#homesection main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+section#homesection main p.firstsectiontitle{
+    color: white;
+    font-size: 80px;
+    margin-top: 7.5%;
+}
+
+section#homesection main p.firstsectiondesc{
+    margin-top: -3%;
+    font-size: 25px;
+    color: rgb(85, 85, 85);
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* --- Estilos para la segunda sección (sección de información) --- */
+section#infosection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section#infosection main#infotopmain{
+    width: 80%;
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section#infosection main#infotopmain img{
+    width: 300px;
+    border-radius: 5px;
+}
+
+section#infosection main#infotopmain .infodesc{
+    margin-left: 5%;
+}
+
+section#infosection main#infotopmain .infodesc p.infodesctitle{
+    font-size: 50px;
+    color: #c1a3de;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section#infosection main#infotopmain .infodesc p.infodesccontent{
+    font-size: 15px;
+    color: #5c5c5c;
+    letter-spacing: 1px;
+}
+
+section#infosection main#infotopmain .infodesc p.firstinfocontent{
+    margin-top: -5%;
+}
+
+section#infosection main#infodownmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 1.5%;
+}
+
+section#infosection main#infodownmain .infodownmainsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+}
+
+section#infosection main#infodownmain .infodownmainsection img{
+    width: 30%;
+}
+
+section#infosection main#infodownmain .infodownmainsection p.infodownmainsectiontitle{
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #c1a3de;
+}
+
+section#infosection main#infodownmain .infodownmainsection p.infodownmainsectiondesc{
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #5c5c5c;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-top: -2.5%;
+}
+
+/* --- Estilos para la tercera sección (sección de cursos) --- */
+section#coursessection{
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato", serif;
+    font-weight: 400;
+}
+
+section#coursessection p#coursessectiontitle{
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    color: #c1a3de;
+}
+
+section#coursessection .coursescontainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 2%;
+    margin-bottom: 4%;
+}
+
+section#coursessection .coursescontainer .course{
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    padding: 2%;
+    transition: all 0.3s ease;
+    margin-top: 4%;
+}
+
+section#coursessection .coursescontainer .toprow{
+    margin-top: -2.5%;
+}
+
+section#coursessection .coursescontainer .course img{
+    width: 20%;
+    border-radius: 10px;
+}
+
+section#coursessection .coursescontainer .course p.coursetitle{
+    font-family: "Lato", serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #c1a3de;
+    margin-top: 10px;
+}
+
+section#coursessection .coursescontainer .course p.coursedesc{
+    font-family: "Lato", serif;
+    font-size: 15px;
+    color: #5c5c5c;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+section#coursessection .coursescontainer .course button.coursebutton{
+    background-color: #c1a3de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: "Lato", serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section#coursessection .coursescontainer .course button.coursebutton:hover{
+    background-color: #9b82b3;
+    transform: scale(1.05);
+}
+
+section#coursessection .coursescontainer .course:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* --- Estilos para la cuarta sección (sección de alumnos) --- */
+section#studentssection{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#studentssection p#studentssectiontitle{
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #c1a3de;
+    font-size: 50px;
+    margin-bottom: 2.5%;
+    text-align: center;
+}
+
+section#studentssection .studentsfeatures{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 3% 0;
+}
+
+section#studentssection .studentsfeatures .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+}
+
+section#studentssection .studentsfeatures .feature img{
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+section#studentssection .studentsfeatures .feature p.featuretitle{
+    font-family: "Lato", serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #c1a3de;
+}
+
+section#studentssection .studentsfeatures .feature p.featuredesc{
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #5c5c5c;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+section#studentssection .studentscta{
+    text-align: center;
+}
+
+section#studentssection .studentscta p.ctatext{
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #5c5c5c;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+section#studentssection .studentscta button.ctabutton{
+    background-color: #c1a3de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Lato", serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 10%;
+}
+
+section#studentssection .studentscta button.ctabutton:hover{
+    background-color: #9b82b3;
+    transform: scale(1.05);
+}
+
+/* --- Estilos para la quinta sección (sección de ayuda) --- */
+section#helpsection{
+    height: 100%;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(238deg, #8EC5FC 17%, #E0C3FC 81%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#helpsection p#helpsectiontitle{
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-top: 5%;
+    border-bottom: white solid 3px;
+    width: 70%;
+}
+
+section#helpsection p#helpsectiondesc{
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 70%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -2%;
+}
+
+section#helpsection main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 2%;
+}
+
+section#helpsection main .helprow{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+section#helpsection main .secondrow{
+    margin-top: 5%;
+}
+
+section#helpsection main .helprow .helpmethod{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+section#helpsection main .helprow .helpmethod img{
+    width: 15%;
+}
+
+section#helpsection main .helprow .helpmethod p{
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 7.5%;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+section#helpsection main .helprow .helpmethod input{
+    background: none;
+    border: solid 1px white;
+    height: 60%;
+    width: 70%;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+section#helpsection main .helprow .helpmethod button{
+    margin-left: 5%;
+    height: 60%;
+    width: 40%;
+    background-color: white;
+    color: #c1a3de;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Lato", serif;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+section#helpsection main .helprow .helpmethod button:hover{
+    transform: scale(1.05);
+    color: #9b82b3;
+}
+
+section#helpsection main .helprow .helpmethod input::placeholder{
+    color: white;
+    text-align: center;
+}
+
+section#helpsection footer{
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 10%;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+/* --- Estilos para el botón de subir arriba --- */
+#scrollButton{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c1a3de;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+#scrollButton:hover{
+    transform: scale(1.1);
+    background-color: #86709a;
+}
+
+/* --- Media Queries --- */
+@media (max-width: 950px){
+    section#infosection main#infotopmain img{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    section#coursessection .coursescontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#infosection main#infotopmain{
+        flex-direction: column;
+    }
+
+    section#studentssection .studentsfeatures{
+        flex-direction: column;
+    }
+
+    section#helpsection .helpmethod{
+        width: 100%;
+    }
+
+    section#coursessection .coursescontainer .toprow{
+        margin-top: 2.5%;
+    }
+
+    section#coursessection .coursescontainer .course{
+        background: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 60%;
+        text-align: center;
+        padding: 2%;
+        transition: all 0.3s ease;
+    }
+
+    section#helpsection main .helprow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#helpsection main .helprow .helpmethod{
+        width: 100%;
+        margin-top: 7.5%;
+    }
+
+    section#helpsection main .helprow .helpmethod input{
+        height: 5vh;
+    }
+
+    section#helpsection main .helprow .helpmethod button{
+        height: 5.5vh;
+    }
+}
+
